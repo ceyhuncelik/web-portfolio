@@ -1,0 +1,16 @@
+/* commonly base config */ 
+@import './style.css';
+
+
+/* layout css  header sidebar etc*/ 
+@import './layouts/menu.css';
+
+/* containers pages or smart compont */ 
+@import './containers/home-page.css';
+/* components pages or smart compont */ 
+@import './linea.css';
+@import './ionicons.min.css';
+@import './magnific-popup.css';
+@import './owl.carousel.css';
+
+@import './components/buttons.css';
