@@ -35,6 +35,8 @@
 body, html{
 	height:100%;
 	width:100%;
+	margin: 0px;
+	padding: 0px;
 }
 body{
 	position:relative;
@@ -83,23 +85,15 @@ body.border-dark .menu-btn > .lines > span{
 .menu-btn > .lines > .l2{
 	margin:6px 0;
 }
-.menu{
-	position:absolute;
-	z-index:399;
-	background:rgba(0,0,0,.9);
-	top:0;
-	right:0;
-	height:100%;
-	width:0;
-	-webkit-transition:width .6s cubic-bezier(.785,.135,.15,.86);
-	-moz-transition:width .6s cubic-bezier(.785,.135,.15,.86);
-	transition:width .6s cubic-bezier(.785,.135,.15,.86);
-	overflow:hidden;
-}
-.menu:hover,
+/* .menu{
+	
+} */
+
+/* .menu:hover,
 .menu-btn:hover + .menu{
 	width:300px;
-}
+} */
+
 .menu > .inner{
 	height:100%;
 	width:300px;
@@ -182,14 +176,14 @@ body.border-dark .main-content > .page-border{
 	Section Styles
 =======================================================*/
 .main-content{
-	position:fixed;
+	/* position:fixed;
 	top:40px;
 	left:40px;
 	right:40px;
 	bottom:40px;
 	z-index:99;
 	overflow:hidden;
-	box-shadow: 0 0 0 10px #FFF;
+	box-shadow: 0 0 0 10px #FFF; */
 }
 .section{
 	position:absolute;

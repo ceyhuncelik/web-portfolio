@@ -1,0 +1,28 @@
+.home-page {
+  .central-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    .huge-header {
+      margin: 0;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 8px;
+      font-size: 78px;
+      text-align: center;
+    }
+    .description {
+      font-size: 18px;
+      color: rgba(255,255,255,.8);
+      margin-top: 15px;
+      margin-bottom: 0;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+  }
+
+}

@@ -1,12 +1,19 @@
+/* libraries */
+@import './../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 /* commonly base config */ 
+@import './variables.scss';
 @import './style.css';
 
 
 /* layout css  header sidebar etc*/ 
-@import './layouts/menu.css';
+@import './layouts/menu.scss';
+@import './layouts/page-wrapper.scss';
+
 
 /* containers pages or smart compont */ 
-@import './containers/home-page.css';
+@import './pages/home-page.scss';
+
 /* components pages or smart compont */ 
 @import './linea.css';
 @import './ionicons.min.css';

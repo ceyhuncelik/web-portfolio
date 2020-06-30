@@ -1,0 +1,26 @@
+.menu-btn {
+  right: none;
+  left: 20px;
+  &.btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.menu {
+  position: absolute;
+	z-index: 399;
+	background: rgba(0,0,0,.4);
+	top: 0;
+  left: 0;
+	height: 100%;
+	width: 0;
+	-webkit-transition:width .6s cubic-bezier(.785,.135,.15,.86);
+	-moz-transition:width .6s cubic-bezier(.785,.135,.15,.86);
+	transition:width .6s cubic-bezier(.785,.135,.15,.86);
+	overflow :hidden;
+  &.active {
+    width: 300px;
+  }
+}

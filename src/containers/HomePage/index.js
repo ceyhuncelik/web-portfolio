@@ -3,41 +3,64 @@ import PropTypes from 'prop-types'
 // import { Button } from 'react-bootstrap';
 
 import PButton from 'components/PButton';
-// import PButton from './../components/PButton';
+import PMenu from 'components/PMenu';
+import PPageWrapper from 'components/PPageWrapper';
+import { Container, Row, Col } from 'react-bootstrap';
 
-export default class index extends Component {
-  static propTypes = {
-    // prop: PropTypes
-  }
 
-  render() {
-    return (
-      <div>
-        <PButton className="asd" colorfull={true} text={'Discover More'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} />
-        <PButton colorfull text={'Hire Me'} to={'/'} />
-        <PButton colorfull  text={'Hire 123'} to={'/'} />
-        <PButton text={'Hire weqrwe'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} />
-        <PButton text={'wertwert Me'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} />
-        <PButton colorfull  text={'Hire Me'} to={'/'} />
-        <PButton text={'Hirwertwerte Me'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} />
-        <PButton colorfull  text={'Hteryertire Me'} to={'/'} />
-        <PButton text={'Hirertyerte Me'} to={'/'} />
-        <PButton text={'Hire Me'} to={'/'} 
-          onClick={() => {
-            alert('Aybikemi ben Cok seviyorum iyiki var o <3<3<3<3<3<3<3');
-          }}
-        />
-      </div>
-    )
-  }
+// const HomePage = function() {
+  
+// }
+
+// React Hook Example 
+const HomePage = (props) => { 
+  return (
+    <>
+      <PPageWrapper className="home-page">
+        <PMenu />
+        <Container className="central-section">
+          <Row>
+            <Col sm={12}>
+              <h1 className="huge-header"> Ceyhun CELİK </h1>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={12}>
+              <p className="description"> A Software Developer </p>
+            </Col>
+          </Row>
+
+          <Row>
+            <Col sm={{ span: 3, offset: 3}}>
+              <PButton className="float-right mt-4" colorfull={false} text={'Discover More'} to={'/'} />
+            </Col>
+
+            <Col sm={{ span: 3, }}>
+              <PButton className="mt-4" text={'Hire Me'} to={'/'} />
+            </Col>
+          </Row>
+
+          
+          
+        </Container>
+      </PPageWrapper>
+    </>
+  );
 }
 
+HomePage.propTypes = {
+  // propslaraın deger tiplarini tanımlamak icin kullanacagız 
+  // 
+};
 
-// iki farklı button um var template icinde 
-// birisi gri hover lı mavi arkapalndaki home sayfasındaki 
-// biride gri arkaplanda gri hover 
+export default HomePage;
+
+
+
+// Component 
+// ui arayuz davranısı olarak 2 ayırcam 
+// kapsayıcı arka plan rengi yada genel ozellik dagıtan 
+
+
+// bootstrap https://getbootstrap.com/docs/4.5/layout/overview/
