@@ -14,6 +14,7 @@ const PPageWrapper = (props) => {
 
   // console.log(shape.diameter());
   // console.log(shape.perimeter());
+  // arrow func scop dikat 
 
 
   const className = ['page-wrapper'];
@@ -57,3 +58,9 @@ export default PPageWrapper;
 // </div>
 
 // https://github.com/facebook/prop-types proptypes
+
+// string 
+
+2 - 2.5 
+yılda 2 3 
+cto
