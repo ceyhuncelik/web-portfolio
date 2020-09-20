@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import HomePage from 'containers/HomePage';
+import AboutPage from 'containers/AboutPage';
 import PMenu from 'components/PMenu';
 
 const RouterContainer = () => {
@@ -12,14 +13,11 @@ const RouterContainer = () => {
     <Router>
       <PMenu></PMenu>
       <Switch>
+        <Route path="/about">
+          <AboutPage />
+        </Route>
         <Route path="/">
           <HomePage />
-        </Route>
-        <Route path="/users">
-          {/* <Users /> */}
-        </Route>
-        <Route path="/">
-          {/* <Home /> */}
         </Route>
       </Switch>
     </Router>

@@ -8,40 +8,22 @@ import PPageWrapper from 'components/PPageWrapper';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-// const HomePage = function() {
+// const AboutPage = function() {
   
 // }
 
 // React Hook Example 
-const HomePage = (props) => { 
+const AboutPage = (props) => { 
   return (
     <>
-      <PPageWrapper mainPage className="home-page">
+      <PPageWrapper className="about-page">
         <PMenu />
         <Container className="central-section">
           <Row>
             <Col sm={12}>
-              <h1 className="huge-header"> Ceyhun CELİK </h1>
+              bakalım mavi gelmez insallah 
             </Col>
           </Row>
-
-          <Row>
-            <Col sm={12}>
-              <p className="description"> A Software Developer </p>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col sm={{ span: 3, offset: 3}}>
-              <PButton className="float-right mt-4" colorfull={false} text={'Discover More'} to={'/'} />
-            </Col>
-
-            <Col sm={{ span: 3, }}>
-              <PButton className="mt-4" text={'Hire Me'} to={'/'} />
-            </Col>
-          </Row>
-
-          
           
         </Container>
       </PPageWrapper>
@@ -49,12 +31,12 @@ const HomePage = (props) => {
   );
 }
 
-HomePage.propTypes = {
+AboutPage.propTypes = {
   // propslaraın deger tiplarini tanımlamak icin kullanacagız 
   // 
 };
 
-export default HomePage;
+export default AboutPage;
 
 
 

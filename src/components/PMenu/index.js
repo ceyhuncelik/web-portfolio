@@ -24,10 +24,10 @@ const PMenu = (props) => {
       }}/>
       <Menu show={showMenu}>
         <MenuItem label="Home" to="" />
-        <MenuItem label="About" to=""/>
-        <MenuItem label="Resume" to="" />
-        <MenuItem label="Portfolio" to="" />
-        <MenuItem label="Contact" to="" />
+        <MenuItem label="About" to="/about"/>
+        <MenuItem label="Resume" to="/resume" />
+        <MenuItem label="Portfolio" to="/portfolio" />
+        <MenuItem label="Contact" to="/contact" />
       </Menu>
     </>
   );
@@ -45,3 +45,5 @@ export default PMenu;
 // neden boyle bi sey gelistirilmis 
 // motivasyon
 // useState ve useEffect kullanımı bunlara goz atılacak ustteki linkten yakalnacak 
+
+
